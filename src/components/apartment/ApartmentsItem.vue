@@ -4,7 +4,7 @@
             <img :src="imgSrc" alt="" class="apartments-item__photo">
             <div class="apartments-item__content">
                 <p class="apartments-item__description">
-                    {{description}}
+                    {{descr}}
                 </p>
                 <div class="apartments-item__rating">
                     <StarRating :rating="rating"/>
@@ -19,12 +19,12 @@
 import StarRating from '../StarRating.vue';
 
     export default {
-        name: 'ApartmentItem',
+        name: 'ApartmentsItem',
         components: {
             StarRating
         },
         props: {
-            description: {
+            descr: {
                 type: String,
                 default: ''
             },
@@ -47,8 +47,7 @@ import StarRating from '../StarRating.vue';
 <style lang="scss" scoped>
     .apartments-item{
         position: relative;
-        max-width: 350px;
-        // padding: 0 15px;
+        max-width: 30%;
         margin-bottom: 30px;
 
         &_inner{
@@ -85,7 +84,7 @@ import StarRating from '../StarRating.vue';
 
         &__description{
             margin-bottom: 20px;
-            max-height: calc(1em * 1.4 * 3);
+            max-height: calc(1em * 1.4 * 5);
             overflow: hidden;
         }
 
