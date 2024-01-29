@@ -1,24 +1,32 @@
 <template>
- <ApartmentsList :items="apartments">
-    <template v-slot:title> New title</template>
- </ApartmentsList>
+  <div>
+    <CustomInput v-model="serchText"/>
+    {{serchText}}
+    <ApartmentsList :items="apartments">
+        <template v-slot:title> New title</template>
+    </ApartmentsList>
+  </div>
 </template>
 
 <script>
 
 import ApartmentsList from './components/apartment/ApartmentsList.vue'
+import CustomInput from './components/shared/CustomInput.vue'
 import apartments from './components/apartment/apartment'
 
 export default {
   name: 'App',
   components: {
-    ApartmentsList
+    ApartmentsList, 
+    CustomInput
   },
   data() {
     return {
+      serchText: '',
       apartments
-      }
+    } 
   }
+  
 }
 </script>
 
@@ -32,3 +40,5 @@ export default {
   margin-top: 60px;
 }
 </style>
+Vue.version
+
