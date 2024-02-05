@@ -10,6 +10,7 @@
                 :rating="rating"
                 :imgSrc="imgUrl"
                 class="apartments-list__item"
+                @click="handleItemClick"
             />
         </div>
     </ContainerS>
@@ -31,7 +32,12 @@ import ContainerS from '../shared/Container.vue'
                 type: Array,
                 default: () => []
             }
-        }
+        },
+        methods: {
+    handleItemClick() {
+      console.log ('item click');
+    }
+  }
     }
 </script>
 
@@ -39,8 +45,8 @@ import ContainerS from '../shared/Container.vue'
 .apartments-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -30px;
+  margin-right: -30px;
 
     &__item{
         margin-bottom: 30px;

@@ -1,5 +1,8 @@
 <template>
-    <button v-bind:type="type" :class="{btn: true,'btn--outlined': outlined}">
+    <button 
+        v-bind:type="type"
+        v-bind="$attrs" 
+        :class="{btn: true,'btn--outlined': outlined}">
         <slot></slot>
     </button>
 </template>

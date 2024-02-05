@@ -227,7 +227,7 @@ export default [
       imgUrl: '/images/apartments/apartment14.jpg',
       descr:
         'Beatae quaerat esse voluptas laborum id quo perspiciatis. Id debitis totam veritatis nostrum sunt. Laboriosam quis dolorem. Repudiandae hic iure similique blanditiis expedita maiores dignissimos reprehenderit sed.',
-      rating: 1,
+      rating: 1.8,
       price: 3250,
       location: {
         city: 'Kherson',
@@ -244,7 +244,7 @@ export default [
       imgUrl: '/images/apartments/apartment15.jpg',
       descr:
         'Debitis aliquid laboriosam optio sequi magnam reiciendis facilis. Earum a id voluptas libero qui. Perspiciatis vero doloribus impedit vel quibusdam.',
-      rating: 1,
+      rating: 1.5,
       price: 3771,
       location: {
         city: 'Odesa',
